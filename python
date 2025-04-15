@@ -1,4 +1,3 @@
-# Prosty kalkulator w Pythonie
 
 # Pobieranie danych od użytkownika
 liczba1 = float(input("Podaj pierwszą liczbę: "))
