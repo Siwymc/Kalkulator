@@ -1,0 +1,24 @@
+# Prosty kalkulator w Pythonie
+
+# Pobieranie danych od użytkownika
+liczba1 = float(input("Podaj pierwszą liczbę: "))
+liczba2 = float(input("Podaj drugą liczbę: "))
+operacja = input("Wybierz operację (+, -, *, /): ")
+
+# Obliczanie wyniku na podstawie wybranej operacji
+if operacja == "+":
+    wynik = liczba1 + liczba2
+elif operacja == "-":
+    wynik = liczba1 - liczba2
+elif operacja == "*":
+    wynik = liczba1 * liczba2
+elif operacja == "/":
+    if liczba2 != 0:
+        wynik = liczba1 / liczba2
+    else:
+        wynik = "Nie można dzielić przez zero!"
+else:
+    wynik = "Nieznana operacja!"
+
+# Wyświetlanie wyniku
+print("Wynik:", wynik)
